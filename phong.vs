@@ -16,6 +16,6 @@ void main()
 
 	//Forward normal vector and fragment position to the fragment shader
 	Normal = normal;
-	FragPos = vec3(model * vec4(position, 1.0));
+	FragPos = vec3(view * model * vec4(position, 1.0));
 
 } 
